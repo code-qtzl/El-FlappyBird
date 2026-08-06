@@ -1,4 +1,4 @@
-# El Flappy Bird Aka Kiro
+# El Flappy Bird (Aka Kiro)
 
 Initial folder containing support resources for the Flappy Kiro game.
 
