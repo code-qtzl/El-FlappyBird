@@ -163,7 +163,7 @@ function drawGameOverScreen(ctx, w, h, score) {
 
 /**
  * Ghost — the player-controlled character.
- * Renders the ghosty.png sprite with rotation; falls back to a
+ * Renders the el-bird.png sprite with rotation; falls back to a
  * colored rectangle if the sprite fails to load.
  */
 function Ghost() {
@@ -184,7 +184,7 @@ function Ghost() {
 	this.sprite.onerror = () => {
 		this.spriteFailed = true;
 	};
-	this.sprite.src = 'assets/ghosty.png';
+	this.sprite.src = 'assets/el-bird.png';
 }
 
 /**

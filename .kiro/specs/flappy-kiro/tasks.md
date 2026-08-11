@@ -18,7 +18,7 @@ Build a browser-based Flappy Bird clone using vanilla HTML, CSS, and JavaScript 
     - [x] 2.1 Create the Ghost object with properties (x, y, width, height, velocity, rotation) and methods (jump, update, draw, reset, getBounds)
         - `update(dt)` applies gravity to velocity (`velocity += GRAVITY * dt`), updates y position, computes rotation from velocity
         - `jump()` sets velocity to JUMP_VELOCITY
-        - `draw(ctx)` renders the ghosty.png sprite with rotation and `imageSmoothingEnabled = false` for pixel-art sharpness; falls back to a colored rectangle if sprite fails to load
+        - `draw(ctx)` renders the el-bird.png sprite with rotation and `imageSmoothingEnabled = false` for pixel-art sharpness; falls back to a colored rectangle if sprite fails to load
         - `reset()` restores initial position (GHOST_X, GHOST_START_Y) and zero velocity
         - `getBounds()` returns `{x, y, width, height}` for collision detection
         - _Requirements: 2.1, 2.2, 2.3, 2.5, 9.1_

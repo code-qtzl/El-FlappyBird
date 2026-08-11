@@ -7,7 +7,7 @@ Flappy Kiro is a retro-styled, browser-based endless side-scroller game built wi
 ## Glossary
 
 - **Game_Canvas**: The HTML5 `<canvas>` element used to render all game visuals
-- **Ghost**: The player-controlled character rendered from the `ghosty.png` sprite asset
+- **Ghost**: The player-controlled character rendered from the `el-bird.png` sprite asset
 - **Pipe_Pair**: A pair of vertically aligned obstacles (top pipe and bottom pipe) with a gap between them that the Ghost must pass through
 - **Gap**: The vertical opening between the top and bottom pipes of a Pipe_Pair that the Ghost flies through
 - **Score_Display**: The on-screen text element that shows the player's current score during gameplay
@@ -37,7 +37,7 @@ Flappy Kiro is a retro-styled, browser-based endless side-scroller game built wi
 
 #### Acceptance Criteria
 
-1. THE Game_Loop SHALL render the Ghost using the `ghosty.png` sprite asset at a fixed horizontal position on the Game_Canvas
+1. THE Game_Loop SHALL render the Ghost using the `el-bird.png` sprite asset at a fixed horizontal position on the Game_Canvas
 2. WHILE the game is active, THE Game_Loop SHALL apply Gravity to the Ghost by increasing its downward velocity each frame
 3. WHEN the player presses the spacebar or clicks/taps the Game_Canvas, THE Ghost SHALL receive an upward velocity impulse (Jump) that counteracts Gravity
 4. WHEN a Jump occurs, THE Audio_Manager SHALL play the `jump.wav` sound effect

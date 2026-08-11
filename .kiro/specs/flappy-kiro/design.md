@@ -76,7 +76,7 @@ Manages the player character's position, velocity, and rendering.
 | `rotation`        | Visual tilt angle derived from velocity                                                    |
 | `jump()`          | Sets velocity to a negative (upward) impulse value                                         |
 | `update(dt)`      | Applies gravity to velocity, updates y position, clamps to top boundary, computes rotation |
-| `draw(ctx)`       | Renders the ghosty.png sprite with rotation and nearest-neighbor scaling                   |
+| `draw(ctx)`       | Renders the el-bird.png sprite with rotation and nearest-neighbor scaling                  |
 | `reset()`         | Restores initial position and velocity for a new game                                      |
 | `getBounds()`     | Returns `{x, y, width, height}` rectangle for collision                                    |
 
@@ -313,7 +313,7 @@ _For any_ keydown event, the input handler SHALL invoke the action callback if a
 
 ### Sprite Loading
 
-- The ghost sprite (`ghosty.png`) is loaded via `new Image()`. If loading fails, the ghost is rendered as a colored rectangle fallback so the game remains playable.
+- The ghost sprite (`el-bird.png`) is loaded via `new Image()`. If loading fails, the ghost is rendered as a colored rectangle fallback so the game remains playable.
 - An `onerror` handler on the Image object sets a `spriteLoaded` flag to `false`, and the `Ghost.draw()` method checks this flag.
 
 ### Frame Timing
@@ -379,7 +379,7 @@ Tag format for each test: `// Feature: flappy-kiro, Property N: <property text>`
 | Case                      | What It Covers                                                 |
 | ------------------------- | -------------------------------------------------------------- |
 | Audio load failure        | Verify game continues when audio files fail to load (Req 8.3)  |
-| Sprite load failure       | Verify fallback rectangle rendering when ghosty.png fails      |
+| Sprite load failure       | Verify fallback rectangle rendering when el-bird.png fails     |
 | Tab backgrounding         | Verify dt cap prevents physics tunneling after long pause      |
 | Ghost at exact boundary   | Ghost y exactly at 0 (ceiling) and exactly at groundY (ground) |
 | Pipe at exact screen edge | Pipe x + width exactly at 0                                    |
