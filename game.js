@@ -75,10 +75,10 @@ function drawStartScreen(ctx, w, h, ghostSprite) {
 
 	ctx.lineWidth = 4;
 	ctx.strokeStyle = '#000000';
-	ctx.strokeText('Flappy Kiro', w / 2, h / 4);
+	ctx.strokeText('El Flappy Bird', w / 2, h / 4);
 
 	ctx.fillStyle = '#FFFFFF';
-	ctx.fillText('Flappy Kiro', w / 2, h / 4);
+	ctx.fillText('El Flappy Bird', w / 2, h / 4);
 
 	// --- Ghost sprite centered slightly above middle ---
 	var spriteSize = 80; // larger size for visual impact
